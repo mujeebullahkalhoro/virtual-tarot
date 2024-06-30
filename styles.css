@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+/* header styling */
+header{
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    background-color:rgb(115, 222, 210);
+    height: 80px;
+   
+}
+header .fa-bars {
+   
+} 
+header .fa-share-nodes{
+    margin-left:auto;
+   
+    
+}
+header i, header span{
+ font-size: 1.5rem;
+}
+header .material-symbols-outlined {
+  margin-left: 1.3rem;
+}
+/* main  conatinner styling starting here */
+.conatiner{
+ min-height: calc(100vh - 80px);
+}
+.text-section{
+    background-color:  rgb(115, 222, 210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+/* .peter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.peter-box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white
+}
+.peter-box h1{
+    display:inline;
+    margin-left: 0.75rem;
+}
+
+img{
+    width: 30px;
+    height:30px ;
+    border-radius: 50%;
+}
+/* text div */
+.text-section .text{
+    margin-left:2rem ;
+    padding: 0.5rem;
+}
