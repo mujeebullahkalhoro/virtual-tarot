@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: "Roboto", sans-serif;
 
 }
@@ -14,32 +15,48 @@ header{
     align-items: center;
     background-color:rgb(115, 222, 210);
     height: 80px;
+    
    
 }
-header .fa-bars {
-   
-} 
-header .fa-share-nodes{
-    margin-left:auto;
-   
+.bars,
+.share,
+.square {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     
+}
+
+.bars:hover,
+.share:hover,
+.square:hover {
+    background-color: whitesmoke;
+}
+
+header .share{
+    margin-left: auto;
 }
 header i, header span{
  font-size: 1.5rem;
 }
-header .material-symbols-outlined {
+header .square {
   margin-left: 1.3rem;
 }
 /* main  conatinner styling starting here */
 .conatiner{
  min-height: calc(100vh - 80px);
+
 }
 .text-section{
-    background-color:  rgb(115, 222, 210);
+    background-color:rgb(115, 222, 210);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+   
     
 }
 /* .peter-box{
@@ -66,6 +83,70 @@ img{
 }
 /* text div */
 .text-section .text{
-    margin-left:2rem ;
-    padding: 0.5rem;
+    /* margin-left:8rem ; */
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding: 2.3rem;
+}
+
+/* side bar */
+.sidebar{
+ position: fixed;
+  top: 0;
+  left: -100%;
+  width: 17%;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
+  transition: left 0.3s ease;
+ 
+}
+.sidebar.show {
+    left: 0;
+  }
+
+.top-conatinner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    background-color:rgb(115, 222, 210);
+    padding: 2rem 1rem;
+
+}
+.bottom-containner{
+    padding: 1.5rem 0.5rem;
+    background-color: white;
+
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    gap:1rem;
+}
+.sidebar-icons{
+
+    width:10rem ;
+    height: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    width: 100%;
+    background-color:white;
+    border-radius: 0.5rem;
+    padding-left:1rem;
+    cursor: pointer;
+}
+.sidebar-icons:hover{
+    background-color: rgb(225, 219, 219);
+}
+.sidebar a{
+    display: flex;
+    gap:1.5rem;
+    text-decoration: none;
+    color: black;
 }
