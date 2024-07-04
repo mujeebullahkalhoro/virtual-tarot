@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+ 
+  height: 100vh;
+  background-color: rgb(115, 222, 210);
+}
+
+/* header styling */
+header {
+  align-self: flex-start;
+  justify-self: start;
+
+}
+header {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.bars,
+.share,
+.question {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bars:hover,
+.share:hover,
+.question:hover {
+  background-color: whitesmoke;
+}
+
+header .share {
+  margin-left: auto;
+}
+header i {
+  font-size: 1.5rem;
+}
+header .question {
+  margin-left: 1.3rem;
+}
+.contact-card {
+  margin: 0 2rem;
+  display: flex;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.form-section {
+  flex: 2;
+}
+.lottifile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 0.5rem;
+  width: 90%;
+  padding: 2rem 0 2rem 0;
+}
+.text_field {
+  padding: 0.5rem;
+  background-color: rgb(240, 234, 234);
+  border: none;
+}
+
+h1 {
+  color: rgb(29, 29, 145);
+}
+button {
+  background-color: #1d1d91;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+}
+textarea {
+  resize: none;
+}
+
+@media screen and (max-width: 730px) {
+  .lottifile {
+    display: none;
+  }
+}
+
+/* nav bar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 17%;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
+  transition: left 0.3s ease;
+  background-color: white;
+}
+.sidebar.show {
+  left: 0;
+}
+
+.top-conatinner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  background-color: rgb(115, 222, 210);
+  padding: 2rem 1rem;
+}
+.bottom-containner {
+  padding: 1.5rem 0.5rem;
+  background-color: white;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+}
+.sidebar-icons {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.sidebar-icons:hover {
+  background-color: rgb(225, 219, 219);
+}
+.sidebar a {
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

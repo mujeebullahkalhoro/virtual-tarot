@@ -188,3 +188,10 @@ img{
 button:hover{
 background-color:whitesmoke;
 }
+
+
+/* ?functionality core  */
+.hidden-text {
+    color: transparent;
+    text-shadow: 0 0 0 black;
+}

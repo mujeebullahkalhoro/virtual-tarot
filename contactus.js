@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(){
     const bars = document.querySelector('.bars');
     const sidebar = document.querySelector('.sidebar');
     
@@ -12,4 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.classList.remove('show');
       }
     });
-  });
+});
