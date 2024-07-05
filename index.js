@@ -90,7 +90,7 @@ button.addEventListener('click',function(e){
       
       text.id='answer';
 
-      text.innerHTML=`<p>Answer...</p><p>${innerText}<p>`;
+      text.innerHTML=`<p>RESPONSE: ${innerText}<p>`;
       
     } 
     
