@@ -8,8 +8,8 @@
 body {
   display: flex;
   flex-direction: column;
- 
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(115, 222, 210);
 }
 
@@ -41,7 +41,7 @@ header {
 .bars:hover,
 .share:hover,
 .question:hover {
-  background-color: whitesmoke;
+  background-color: rgb(185, 251, 243);
 }
 
 header .share {
@@ -56,26 +56,25 @@ header .question {
 .contact-card {
   margin: 0 2rem;
   display: flex;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-.form-section {
-  flex: 2;
-}
-.lottifile {
-  flex: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 50%;
+
+
 }
+.form-section {
+  width: 90%;
+}
+
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
   gap: 0.5rem;
-  width: 90%;
+  width: 100%;
   padding: 2rem 0 2rem 0;
 }
 .text_field {
@@ -99,18 +98,14 @@ textarea {
   resize: none;
 }
 
-@media screen and (max-width: 730px) {
-  .lottifile {
-    display: none;
-  }
-}
+
 
 /* nav bar */
 .sidebar {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 17%;
+  width:250px;
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
   transition: left 0.3s ease;
@@ -164,11 +159,17 @@ textarea {
 }
 
 img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 i,span{
-  color: black;
+  color: rgb(29, 29, 145);
   }
   
+  @media screen and (max-width:1000px) {
+    
+    .sidebar {
+        display: none;
+    }
+}  
