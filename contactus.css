@@ -166,6 +166,12 @@ img {
 i,span{
   color: rgb(29, 29, 145);
   }
+
+  @media screen and (max-width:800px) {
+    .contact-card{
+      width: 80%;
+    }
+  }
   
   
  
