@@ -167,9 +167,5 @@ i,span{
   color: rgb(29, 29, 145);
   }
   
-  @media screen and (max-width:1000px) {
-    
-    .sidebar {
-        display: none;
-    }
-}  
+  
+ 

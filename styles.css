@@ -169,8 +169,4 @@ i,
 span {
   color: black;
 }
-@media screen and (max-width: 1000px) {
-  .sidebar {
-    display: none !important;
-  }
-}
+
