@@ -90,6 +90,7 @@ img {
   /* height: 100vh; */
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .text-box {
   display: flex;
@@ -168,7 +169,7 @@ button:hover {
   height: 100vh;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
   transition: left 0.3s ease;
-  z-index: 1000;
+  
 }
 .sidebar-text{
   color: white;
@@ -195,6 +196,7 @@ button:hover {
 .bottom-containner {
   padding: 1.5rem 0.5rem;
   background-color: white;
+  height: 100%;
 }
 
 .nav-container {
